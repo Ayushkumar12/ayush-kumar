@@ -4,43 +4,27 @@ import './Experience.css';
 
 const experiences = [
     {
-        id: 1,
-        role: "Senior Full Stack Dev",
-        company: "TechCorp Global",
-        period: "2024 - Present",
-        description: "Leading a team of developers in building scalable microservices and optimizing cloud infrastructure.",
-        type: "work"
-    },
-    {
-        id: 2,
-        role: "Frontend Developer",
-        company: "Creative Solutions",
-        period: "2022 - 2024",
-        description: "Developed interactive user interfaces using React and enhance performance by 40%.",
-        type: "work"
-    },
-    {
         id: 3,
         role: "Freelance Developer",
-        company: "Self-Employed",
-        period: "2021 - 2022",
-        description: "Delivered custom web solutions for diverse clients, focusing on e-commerce and portfolio sites.",
+        company: "Brain Builders Abacus",
+        period: "2026",
+        description: "Delivered a centralized administrative hub for managing student registrations, exam configurations, and academic results.",
         type: "work"
     },
     {
         id: 4,
-        role: "Computer Science Degree",
-        company: "University of Tech",
-        period: "2018 - 2022",
-        description: "Specialized in Software Engineering and Artificial Intelligence. Graduated with Honors.",
-        type: "education"
+        role: "Web Developer",
+        company: "CyberZero Club",
+        period: "2024 - 2026",
+        description: "Keep the site updated with events, responsive, community-reflective, and filled with engaging member spotlights.",
+        type: "work"
     }
 ];
 
 export default function Experience() {
     return (
         <section id="experience" className="section container">
-            <h2 className="text-center">System <span className="text-gradient">Logs</span></h2>
+            <h2 className="text-center">Work Experience</h2>
 
             <div className="timeline">
                 <div className="timeline-line"></div>

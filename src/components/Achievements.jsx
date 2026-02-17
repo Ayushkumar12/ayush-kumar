@@ -5,60 +5,66 @@ import './Achievements.css';
 const achievements = [
     {
         id: 1,
-        title: "AWS Certified Solution Architect",
-        icon: <Shield size={32} />,
-        description: "Validated expertise in designing distributed systems on AWS.",
+        title: "Introduction to Artificial Intelligence",
+        icon: <Award size={32} />,
+        description: "Great Learning - Acquired foundational knowledge in AI concepts and applications.",
         progress: 100,
-        unlocked: true
+        unlocked: true,
+        link: "https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-artificial-intelligence"
     },
     {
         id: 2,
-        title: "Hackathon Winner 2025",
+        title: "Python for Data Science",
         icon: <Award size={32} />,
-        description: "1st Place in Global AI Innovation Challenge.",
+        description: "IBM (Cognitive Class) - Mastered Python for data analysis and visualization.",
         progress: 100,
-        unlocked: true
+        unlocked: true,
+        link: "https://cognitiveclass.ai/courses/python-for-data-science"
     },
     {
         id: 3,
-        title: "Open Source Contributor",
-        icon: <Terminal size={32} />,
-        description: "Active maintainer for 3+ popular React libraries.",
-        progress: 85,
-        unlocked: true
+        title: "Introduction to Cloud Computing",
+        icon: <Shield size={32} />,
+        description: "IBM - Detailed overview of cloud computing concepts and models.",
+        progress: 100,
+        unlocked: true,
+        link: "#"
     },
     {
         id: 4,
-        title: "Tech Blogger",
-        icon: <BookOpen size={32} />,
-        description: "Published 50+ technical articles on Dev.to and Medium.",
-        progress: 60,
-        unlocked: false
+        title: "Web Development",
+        icon: <Terminal size={32} />,
+        description: "Internshala - Comprehensive training in HTML, CSS, JavaScript, and React.",
+        progress: 100,
+        unlocked: true,
+        link: "#"
     },
     {
         id: 5,
-        title: "Bug Hunter",
-        icon: <Zap size={32} />,
-        description: "Reported critical vulnerabilities in major open-source projects.",
-        progress: 40,
-        unlocked: false
+        title: "Java Programming",
+        icon: <Coffee size={32} />,
+        description: "Great Learning - Solidified object-oriented programming skills in Java.",
+        progress: 100,
+        unlocked: true,
+        link: "#"
     },
     {
         id: 6,
-        title: "Caffeine Powered",
-        icon: <Coffee size={32} />,
-        description: "Consumed over 1000+ cups of coffee while coding.",
+        title: "Structured Query Language (SQL)",
+        icon: <BookOpen size={32} />,
+        description: "Great Learning - Learned database management and query optimization.",
         progress: 100,
-        unlocked: true
+        unlocked: true,
+        link: "#"
     }
 ];
 
 export default function Achievements() {
     return (
         <section id="achievements" className="section container">
-            <h2 className="text-center">Unlocked <span className="text-gradient">Protocols</span></h2>
+            <h2 className="text-center">Certifications & <span className="text-gradient">Badges</span></h2>
             <p className="text-center" style={{ color: 'var(--text-secondary)', marginBottom: '3rem' }}>
-                Milestones unlocked during my <a href="#experience" style={{ color: 'var(--accent)', textDecoration: 'none' }}>career execution &rarr;</a>
+                Verified credentials and technical milestones.
             </p>
 
             <div className="achievements-grid">
@@ -66,7 +72,7 @@ export default function Achievements() {
                     <motion.div
                         key={item.id}
                         className={`achievement-card ${item.unlocked ? 'unlocked' : 'locked'}`}
-                        initial={{ opacity: 0, scale: 0.8 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: index * 0.1 }}
                         viewport={{ once: true }}
@@ -77,14 +83,9 @@ export default function Achievements() {
                         <div className="achievement-content">
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
-                            <div className="achievement-progress-bar">
-                                <div
-                                    className="progress-fill"
-                                    style={{ width: `${item.progress}%` }}
-                                ></div>
-                            </div>
+                            {/* Removed progress bar for certifications as they are usually binary (earned/not earned) */}
                         </div>
-                        {item.unlocked && <div className="unlock-badge">UNLOCKED</div>}
+                        <div className="unlock-badge">VERIFIED</div>
                     </motion.div>
                 ))}
             </div>

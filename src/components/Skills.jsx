@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
-import { Code, Database, Globe, Layers, Server, Terminal, Cpu, Layout } from 'lucide-react';
+import { Code, Database, Globe, Layers, Server, Terminal, Cpu, Layout, Palette } from 'lucide-react';
 import './Skills.css';
 
 const skills = [
-    { name: 'JavaScript', icon: <Code />, level: 90 },
-    { name: 'React.js', icon: <Globe />, level: 85 },
-    { name: 'Node.js', icon: <Server />, level: 80 },
-    { name: 'MongoDB', icon: <Database />, level: 75 },
-    { name: 'Express', icon: <Layers />, level: 80 },
-    { name: 'HTML/CSS', icon: <Layout />, level: 95 },
-    { name: 'TypeScript', icon: <Code />, level: 70 },
-    { name: 'Git', icon: <Terminal />, level: 85 },
-    { name: 'REST APIs', icon: <Cpu />, level: 88 },
+    { name: 'HTML', icon: <Layout />, level: 70 },
+    { name: 'CSS', icon: <Palette />, level: 80 },
+    { name: 'Javascript', icon: <Code />, level: 50 },
+    { name: 'React JS', icon: <Globe />, level: 40 },
+    { name: 'Node JS', icon: <Server />, level: 30 },
+    { name: 'Express JS', icon: <Layers />, level: 40 },
+    { name: 'Mongo JS', icon: <Database />, level: 50 },
+    { name: 'Python', icon: <Terminal />, level: 50 },
+    { name: 'SQL', icon: <Database />, level: 75 },
 ];
 
 export default function Skills() {
@@ -23,7 +23,7 @@ export default function Skills() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-center">Technical <span className="text-gradient">Arsenal</span></h2>
+                <h2 className="text-center">Technical </h2>
 
 
                 <div className="skills-grid">

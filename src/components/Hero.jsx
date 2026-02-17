@@ -27,10 +27,7 @@ export default function Hero() {
                             <a href="#projects" className="btn btn-primary">
                                 View Work
                             </a>
-                            <a href="#contact" className="btn btn-outline">
-                                Contact Me
-                            </a>
-                            <a href="/resume.pdf" download="Ayush_Kumar_Resume.pdf" className="btn btn-outline">
+                            <a href="/ayush.docx" download="Ayush_Kumar_Resume.docx" className="btn btn-outline">
                                 <Download size={18} /> Download CV
                             </a>
                         </div>
@@ -57,7 +54,7 @@ export default function Hero() {
                         className="hero-image-wrapper"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80"
+                            src="/Ayush1.5c15f72bb28af866837d.webp"
                             alt="Ayush Kumar - Developer"
                             className="hero-img"
                         />
