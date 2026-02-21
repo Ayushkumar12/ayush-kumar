@@ -11,45 +11,45 @@ import bajpai from '../asserts/bajpai.png';
 
 const projects = [
     {
-        title: 'E-Commerce Platform',
+        title: 'Mehryaann:- E-Commerce Platform',
         description: 'A full-stack online store with payment integration, user authentication, and admin dashboard.',
         tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-        links: { demo: '#', github: '#' },
+        links: { demo: 'https://mehryan-e-commerce.vercel.app/' },
         image: mehryaan
     },
     {
-        title: 'Delightio :- online restaurant ordering system',
+        title: 'Delightio:- online restaurant ordering system',
         description: 'A full-stack online restaurant ordering system with menu management, order tracking, and user reviews.',
         tags: ['Node.js', 'React.js', 'Express', 'MongoDB'],
-        links: { demo: '#', github: '#' },
+        links: { demo: 'https://delightio.vercel.app/'},
         image: delightio
     },
     {
-        title: 'Portfolio Website',
-        description: 'Modern, responsive personal portfolio showcasing skills and projects.',
-        tags: ['React', 'Framer Motion', 'CSS'],
-        links: { demo: '#', github: '#' },
+        title: 'CodeCircle:- developers social media platform',
+        description: 'A social media platform for developers to share projects, collaborate, and network with other tech enthusiasts.',
+        tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+        links: { demo: 'https://code-circle-jade.vercel.app/'},
         image: codecircle
     },
     {
-        title: 'Portfolio Website',
-        description: 'Modern, responsive personal portfolio showcasing skills and projects.',
-        tags: ['React', 'Framer Motion', 'CSS'],
-        links: { demo: '#', github: '#' },
+        title: 'BrainBuildersAbacus:- online abacus learning platform',
+        description: 'An online platform for learning abacus skills with interactive lessons and progress tracking.',
+        tags: ['Node.js', 'React.js', 'Express', 'MongoDB'],
+        links: { demo: 'https://brainbuildersabacus.com/'},
         image: abacus
     },
     {
-        title: 'Portfolio Website',
-        description: 'Modern, responsive personal portfolio showcasing skills and projects.',
-        tags: ['React', 'Framer Motion', 'CSS'],
-        links: { demo: '#', github: '#' },
+        title: 'MetaCode:- IT company website',
+        description: 'A modern, responsive website for an IT company showcasing services and projects.',
+        tags: ['Node.js', 'React.js', 'Express', 'MongoDB'],
+        links: { demo: 'https://metacode.co.in/'},
         image: metacode
     },
     {
         title: 'Portfolio Website',
         description: 'Modern, responsive personal portfolio showcasing skills and projects.',
-        tags: ['React', 'Framer Motion', 'CSS'],
-        links: { demo: '#', github: '#' },
+        tags: ['Node.js', 'React.js', 'Express', 'MongoDB'],
+        links: { demo: 'https://portfolio-vishaal.vercel.app/' },
         image: bajpai
     }
 ];
@@ -87,9 +87,6 @@ export default function Projects() {
                             <div className="project-links">
                                 <a href={project.links.demo} className="project-link">
                                     <ExternalLink size={16} /> Live Demo
-                                </a>
-                                <a href={project.links.github} className="project-link">
-                                    <Github size={16} /> Source Code
                                 </a>
                             </div>
                         </div>
