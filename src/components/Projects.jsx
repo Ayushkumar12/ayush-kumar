@@ -18,9 +18,9 @@ const projects = [
         image: mehryaan
     },
     {
-        title: 'Task Management App',
-        description: 'Real-time collaborative project management tool for remote teams.',
-        tags: ['Next.js', 'Firebase', 'Tailwind'],
+        title: 'Delightio :- online restaurant ordering system',
+        description: 'A full-stack online restaurant ordering system with menu management, order tracking, and user reviews.',
+        tags: ['Node.js', 'React.js', 'Express', 'MongoDB'],
         links: { demo: '#', github: '#' },
         image: delightio
     },

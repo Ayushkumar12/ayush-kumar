@@ -111,6 +111,22 @@
     background: var(--accent-dim);
 }
 
+.form-status {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    background: rgba(0, 243, 255, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 .footer {
     margin-top: 4rem;
     color: var(--text-secondary);
