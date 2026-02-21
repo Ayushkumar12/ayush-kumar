@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Code2 } from 'lucide-react';
 import './Projects.css';
+import mehryaan from '../asserts/mehryaan.png';
+import delightio from '../asserts/delightio.png';
+import codecircle from '../asserts/codecircle.png';
+import abacus from '../asserts/brainbuildersabacus.png';
+import metacode from '../asserts/metacode.png';
+import bajpai from '../asserts/bajpai.png';
+
 
 const projects = [
     {
@@ -8,21 +15,42 @@ const projects = [
         description: 'A full-stack online store with payment integration, user authentication, and admin dashboard.',
         tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
         links: { demo: '#', github: '#' },
-        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+        image: mehryaan
     },
     {
         title: 'Task Management App',
         description: 'Real-time collaborative project management tool for remote teams.',
         tags: ['Next.js', 'Firebase', 'Tailwind'],
         links: { demo: '#', github: '#' },
-        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+        image: delightio
     },
     {
         title: 'Portfolio Website',
         description: 'Modern, responsive personal portfolio showcasing skills and projects.',
         tags: ['React', 'Framer Motion', 'CSS'],
         links: { demo: '#', github: '#' },
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+        image: codecircle
+    },
+    {
+        title: 'Portfolio Website',
+        description: 'Modern, responsive personal portfolio showcasing skills and projects.',
+        tags: ['React', 'Framer Motion', 'CSS'],
+        links: { demo: '#', github: '#' },
+        image: abacus
+    },
+    {
+        title: 'Portfolio Website',
+        description: 'Modern, responsive personal portfolio showcasing skills and projects.',
+        tags: ['React', 'Framer Motion', 'CSS'],
+        links: { demo: '#', github: '#' },
+        image: metacode
+    },
+    {
+        title: 'Portfolio Website',
+        description: 'Modern, responsive personal portfolio showcasing skills and projects.',
+        tags: ['React', 'Framer Motion', 'CSS'],
+        links: { demo: '#', github: '#' },
+        image: bajpai
     }
 ];
 
